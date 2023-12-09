@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <h1>File upload</h1>
+    </header>
+    <main>
+        <form class="form-upload" action="/upload" enctype="multipart/form-data" method="post">
+            <div class="form-group">
+                <label for="uploaded-file" class="drop-container">
+                    <span class="drop-title">Drop files here</span>
+                    or
+                    <input type="file" id="uploaded-file" multiple required class="form-control-file" name="uploaded_file">
+                </label>
+              <input type="submit" value="Upload" class="btn btn-default">            
+            </div>
+
+            <div class="progress-container hidden">
+                <label for="file">
+                    <span class="progress-label"></span>:
+                    <span class="progress-status"></span>
+                </label>
+                <progress id="file" value="0" max="100"></progress>
+            </div>
+        </form>
+        <div class="message-container">
+            <ul>
+            </ul>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/crypto-js/crypto-js.js"></script>
+    <script src="js/dist/main.js"></script>
+</body>
+</html>

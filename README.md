@@ -1,1 +1,1 @@
-# This Express JS application enables users to upload files to a server-side directory. It utilizes Multer middleware for efficient file handling.
+This Express JS app lets users easily upload files to a server folder. It checks file integrity by calculating checksums on both client and server sides, ensuring the uploaded files stay intact. It uses Multer middleware for smooth and efficient file handling.
